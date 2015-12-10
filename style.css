@@ -1,89 +1,67 @@
 body {
-    background: #f0f0f0;
+    background: #221F2C;
     font-family: helvetica, arial, sans-serif;
     color: black;
     margin: 0;
     padding: 0;
 }
 
-div.header-outer {
-    background: #f0f0f0;
-    color: black;
-    border-bottom: 1px solid #ccc;
+@media only screen and (min-width: 320px) {
+
+    div.appstorebadge img { width: 120; }
+    div.header-inner { padding: 10 20; }
+    div.darkrow-content { padding: 20; }
+    div.footer-inner { padding: 20 20; }
+    
+    img.darkrow { margin-top: 10; }
+
+    span.title { font-size: 1.75em; }
+    span.tagline { font-size: 1.25em; }
 }
 
-div.header-inner {
-    margin: 0 auto;
-    max-width: 944px;
-    min-width: 280px;
-    color: black;
+@media only screen and (min-width: 600px) {
+
+    div.appstorebadge img { width: 180; }
+    div.header-inner { padding: 20 40; }
+    div.darkrow-content { padding: 40; }
+    div.footer-inner { padding: 20 40; }
+    img.darkrow { margin-top: 40; }
+
+    span.title { font-size: 2.5em; }
+    span.tagline { font-size: 2em; }
+}
+
+@media only screen and (min-width: 800px) {
+
+    div.appstorebadge img { width: auto; }
+    div.header-inner { padding: 20 80 }
+    div.darkrow-content { padding: 70 80; }
+    div.footer-inner { padding: 20 80; }
+
+    img.darkrow { margin-top: 80; }
+
+    span.title { font-size: 3.5em;}
+    span.tagline { font-size: 3.0em; }
 }
 
 div.appstorebadge {
     float: right;
 }
 
-div.firstrow-content {
-    background: white;
+div.header-outer {
+    background: #fafafa;
+    color: #fafafa;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+div.header-inner {
     margin: 0 auto;
     max-width: 944px;
     min-width: 280px;
-}
-
-span.title {
-    float: left;
-    margin: 40 0;
-    font-family: futura, helvetica, arial, sans-serif;
-    font-weight: 400;
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-    background: white;
-}
-
-span.tagline {
-    font-family: "HelveticaNeue-Thin", Helvetica, Arial, sans-serif;
-    font-weight: 100;
-    font-size: 60;
-}
-
-@media only screen and (min-width: 320px) {
-
-    span.title { font-size: 1.25em; margin: 20 0; padding: 14 20; }
-    span.tagline { font-size: 1.25em; }
-    div.appstorebadge { margin: 25 0; }
-    div.appstorebadge img {width: 140; }
-    div.header-outer { height: 96; }
-    div.header-inner { height: auto; padding: 0 20; }
-    div.firstrow-content { padding: 20; }
-    img.firstrow { margin-top: 20; }
-    div.footer-inner { padding: 20 20; }
-}
-
-@media only screen and (min-width: 600px) {
-
-    span.title { font-size: 2.5em; margin: 30 0; padding: 20 30; }
-    span.tagline { font-size: 2em; }
-    div.appstorebadge { margin: 40 0; }
-    div.appstorebadge img { width: 220; }
-    div.header-outer { height: 152; }
-    div.header-inner { height: auto; padding: 0 40; }
-    div.firstrow-content { padding: 40; }
-    img.firstrow { margin-top: 40; }
-    div.footer-inner { padding: 20 40; }
-}
-
-@media only screen and (min-width: 800px) {
-
-    span.title { font-size: 3.75em; margin: 40 0; padding: 20 30; }
-    span.tagline { font-size: 3.1em; }
-    div.appstorebadge { margin: 60 0; }
-    div.appstorebadge img { width: auto; }
-    div.header-outer { height: 200; }
-    div.header-inner { height: 200; padding: 0 80; }
-    div.firstrow-content { padding: 70 80; }
-    img.firstrow { margin-top: 80; }
-    div.footer-inner { padding: 20 80; }
+    overflow: auto;
+    color: black;
 }
 
 img {
@@ -100,35 +78,30 @@ img.landscape {
     width: 568;
 }
 
-div.firstrow {
-    background: white;
-}
-
-
 div.lightrow {
-    background: white;
+    background: #fafafa;
     height: 668;
 }
 
 div.lightrow-content {
-    background: white;
+    background: #221F2C;
     margin: 0 auto;
     padding: 40 0;
-    width: 944;
-    height: 568;
+    max-width: 944px;
+    min-width: 280px;
 }
 
 div.darkrow {
-    height: 668;
-    background: #f0f0f0;
+/*    height: 668;*/
+    background: #221F2C;
 }
 
 div.darkrow-content {
     margin: 0 auto;
-    padding: 50 0;
-    width: 944;
-    background: #f0f0f0;
-    height: 568px;
+    max-width: 944px;
+    min-width: 280px;
+    background: #221F2C;
+    color: white;
 }
 
 div.left-img {
@@ -187,16 +160,28 @@ div.footer-links a.app {
     font-weight: 300;
 }
 
+div.disclaimer {
+    font-weight: 100;
+    font-size: 0.8em;
+    margin: 20 0;
+    color: #888;
+}
+
 span.footer-copyright {
     font-size: 0.8em;
     font-weight: 100;
     color: #666;
 }
 
-div.disclaimer {
+span.title {
+    float: left;
+    font-family: futura, helvetica, arial, sans-serif;
+    font-weight: 400;
+    color: #221F2C;
+}
+
+span.tagline {
+    font-family: "HelveticaNeue-Thin", Helvetica, Arial, sans-serif;
     font-weight: 100;
-    font-size: 0.8em;
-    margin: 20 0;
-    color: #888;
 }
 
